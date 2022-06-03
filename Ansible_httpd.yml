@@ -1,0 +1,14 @@
+- hosts: 192.168.56.111
+  gather_facts: true
+  become: yes
+  tasks:
+
+    - name: install httpd
+      yum:
+        name: httpd
+        state: present
+
+    - name: start httpd
+      service:
+         name: httpd
+         state: started
