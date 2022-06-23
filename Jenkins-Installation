@@ -1,0 +1,28 @@
+sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+sudo amazon-linux-extras install epel -y
+yum install jenkins -y
+service jenkins start
+
+sudo systemctl daemon-reload
+
+sudo systemctl enable jenkins
+sudo systemctl start jenkins
+sudo systemctl status jenkins
+
+-------------------------------------------
+if using linux machine instead of ec2 instance
+
+For CentOS 7:  worked using this
+
+firewall-cmd --permanent --add-port=8080/tcp
+firewall-cmd --reload
+===================================================
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+sudo yum upgrade
+# Add required dependencies for the jenkins package
+sudo yum install java-11-openjdk
+sudo yum install jenkins
+sudo systemctl daemon-reload
