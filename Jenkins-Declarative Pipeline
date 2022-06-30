@@ -1,0 +1,38 @@
+Jenkinsfile1
+
+pipeline {
+
+agent any
+
+stages{
+
+stage (gitcheckout)
+{
+step ()
+git clone url
+
+}
+
+stage ( build )
+
+{
+
+step (build)
+
+mvn clean package
+
+}
+
+steage ( deploy)
+
+step ()
+
+{
+
+scp source destination 
+
+tomcat servie start
+
+}
+
+}
