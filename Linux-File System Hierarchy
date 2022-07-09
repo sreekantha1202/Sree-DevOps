@@ -1,0 +1,38 @@
+man hier
+
+*  / : is the top level directory and root level directory for all other directory's.
+            In Windows it is like C:\
+
+* /root: It is the home dir and provides working environment for the root user (Super user).
+            In Windows it is like C:\Users\Administrator
+
+* /home:  It is other home dir for other users.
+            In Windows it is like   C:\Users\<username>
+
+* /usr: By default all the softwares are installed in usr dir.
+             In Windows it is like   C:\Program Files
+             
+* /bin: It contains commands which are used by all users.
+* /sbin: It contains commands which are used by only root (super user).
+            eg: fdisk, fsck, mkfs, mkswap, reboot, route, swapon
+            Go to /sbin and type ls command to list or copy list to text file using ls >> sbin.txt command.
+
+* /var: It contains variable data like mails, log files
+
+* /dev: It contains device files.
+            eg: /dev/hda, /dev/sda, /dev/xvdf  for volumes/hard disk details.
+
+* /boot: It contains bootable files 
+            eg: vmlinuz, initrifams
+* /etc: It contains configuration files.
+            eg: init.d, cron.d, fstab, krb5.conf, lvm, networks, passwd, rpc, rpm, selinux, services,                          
+            shadow, sudoers, sysconfig, sysctl.conf, yum.conf
+
+* /opt: It is optional directory for /usr, contains third party softwares.
+            c:\program files
+
+* /proc: It contains information about processes and other system information
+
+* /mnt: It is mount points for mounting storage devices CDROMs and USB drives.
+
+* /media: It contains all removable media.
