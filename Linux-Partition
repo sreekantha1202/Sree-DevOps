@@ -1,0 +1,31 @@
+Disk partitioning is one step of disk formatting. 
+It is the process of dividing a disk into one or more regions, the so called partitions.
+If a partition is created, the disk will store the information about thelocation and 
+size of partitions in partition table that is usually located in the first sector of a disk.
+
+MBR = MASTER BOOT RECORD
+P= PRIMARY PARTITION
+EXTENDED= EXTENDED PARTITION
+L= LOGICAL PARTITION 
+FREE= FREE SPACE
+
+IDE         /dev/hda
+SCSI        /dev/sda
+Virtual     /dev/vda
+AWS
+AZURE
+
+FILE SYSTEM
+ext4  ubuntu
+XFS   RHEL 7,8 CentOS 7,8
+
+ /etc/mtab is a file which stores the information of all the currently mounted file 
+systems; it is dynamic and keeps changing. 
+
+/etc/fstab is the file which is keeps information about the permanent mount point. If 
+you want to make your mount point permanent, so that it will be mounted even after 
+reboot, then you need to make an appropriate entry in this file. 
+
+
+fdisk -l      to view the existing partitions
+  eg: output Disk /dev/mapper/centos-root: 6652MB
