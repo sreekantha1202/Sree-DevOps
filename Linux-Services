@@ -1,0 +1,35 @@
+Linux Services
+ SERVICE :  This conrtols the starting and stopeed on services.
+
+
+
+Examples: 
+
+sudo systemctl start apache2          To start the service
+sudo systemctl status apache2        To check the status of service
+sudo service apache2 start              To start the service
+sudo /etc/init.d/apache2 start         To start the service
+sudo service apache2 status            To check the status 
+
+sudo service httpd stop                    To stop the service
+sudo service httpd restart                To restart the service
+sido service httpd reload                 To reload the service
+Firewall
+
+systemctl enable firewalld
+systemctl start firewalld
+
+firewall-cmd --permanent --add-port=8080/tcp
+firewall-cmd --reload
+
+allow port 8080
+iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 8080 -j ACCEPT -m comment --comment "Tomcat Server port"
+service iptables save
+
+sudo firewall-cmd --list-all                                                  To check all the allowed services
+sudo firewall-cmd --remove-service=ssh --permanent     To remove the service
+sudo firewall-cmd --add-service=http --permanent         To add httpd or port 80
+sudo firewall-cmd --reload                                                 To restart firewall
+
+
+CHKCONFIG : This controls which services are set to start on boot
