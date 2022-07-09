@@ -1,0 +1,39 @@
+NANO Editior
+NANO Editor 
+
+sreekanth@dell:~$ nano --version
+ GNU nano, version 4.8
+
+nano filename
+nano -v filename                  to view file in Read only mode
+
+ctrl + v         to go to bottom
+ctrl + o         to saveas
+ctrl + x         save changes Yes or NO
+ctrl + w        to search for a word
+ctrl + \          to replace the word
+ctrl + k         to cut the text
+ctrl + u         paste the text
+
+
+
+
+Enable password authentication
+nano /etc/ssh/sshd_config
+Ctrl + w  -- to search window
+search for passwordauthen
+make changes to yes
+ctrtl + x save
+service sshd restart
+
+replace a keyword
+ctrl + \  replace the word
+
+cut the text
+ctrl + k to cut the text
+
+copy the text
+alt+6
+
+paste the text
+ctrl + u
