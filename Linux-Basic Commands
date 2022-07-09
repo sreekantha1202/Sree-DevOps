@@ -1,0 +1,47 @@
+BASIC COMMANDS
+* ifconfig                      To check the system IP Address.
+* ip addr                       To check the system IP Address.
+* WHO                          To show who is logged on.
+* W                               To show who is logged on and what they are doing
+* Whoami                     To print effective user ID
+* man                            Interface to the on-line reference manuals
+* clear                           Clear the Terminal Screen
+* history                        shows all the commands that you have used in the past for the current terminal session.
+* date                            To print or set the Date and Time
+* cal                               Displays a simple calendar
+* uptime                        Shows how long the system is running
+* hostname                   To show or set hostname
+* domainname              To show or set Domain name
+* dnsdomainname        To show or set DNS Domain name
+* nisdomainname         To show or set NIS Domain name
+* ls                                 To list directory contents
+* pwd                              present working directory
+* less                              Read files page by page
+* more
+* head                            To display first 10 lines of file.
+* tail                               To display Last10 lines of file.
+* page                            Read files page by page
+
+Creating and View Files :
+* touch file1 file 2    : to create empty multiple files at a time.
+* cat > file3               : to create file using cat 
+* cat file3                  : to view the file
+* cat >> file1             : to edit /append existing file.
+* gedit, nano, vi, vim are file editors.
+
+Creating Directories / Folders
+* mkdir  folder1 : to create folders
+* ls -i : to list the files/directories with permissions eg: ( ll , ls -a, ls -t, ls -r)
+* mkdir -p india/telangana/hyderabad : to create dir’s in directory 
+* ls -R : to view sub folders.
+
+Copying Files & Directories 
+* cp file1 folder1 :to copy files
+* cp -rf folder1 folder2 :to copy directories
+* mv folder1(old name) folder 5 (new name) : to rename files
+* mv folder1 folder2 : to move folder1 into folder2
+* tree - list conents of directories  in a tree-like format'
+
+
+Removing Files & Directories
+* rm -rf folder1 : to remove files & dir
