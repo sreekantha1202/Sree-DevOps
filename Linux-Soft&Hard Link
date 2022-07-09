@@ -1,0 +1,28 @@
+Soft Link
+      ln -s filename softlinkdestination/filename
+eg:   touch file2
+      ln -s file2 /home/file2sf
+
+Hard link
+      ln filename softlinkdestination/filename
+eg:   touch file2
+      ln file2 /home/file2sf
+      
+      
+      Soft Link
+1 Size of link file is equal to no. of 
+characters in the name of original file
+2 Can be created across the Partition 
+3 Inode no. of source and link file is 
+different
+4 if original file is deleted, link is broken 
+and data is lost
+5 SHORTCUT FILE
+
+    Hard Link
+1.Size of both file is same
+2.Can't be created across the partition
+3.Inode no. of both file is same
+4.If original file is deleted then also link 
+will contain data
+5.BACKUP FILE
