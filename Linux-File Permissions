@@ -29,3 +29,7 @@ a     all
 sudo chmod a-rwx test/    removes all permissions for file
 sudo chmod a+rwx test/ provides full permissions to all
 sudo chmod a+r  test/     provides full permissions to all
+sudo chmod u+x ktfile (Adding execute permission to user only)
+sudo chmod go-wx ktfile (Removing write and execute permissions from group and other)
+sudo chmod go+wx ktfile (Adding write and execute permissions from group and other)
+sudo chmod go=r ktfile (Giving only read permission to group and other) 
