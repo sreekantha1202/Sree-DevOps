@@ -1,0 +1,42 @@
+USER MANAGEMENT :
+
+* To create a user
+                cmd : sudo useradd chinna
+* To assign password to user
+                cmd:  sudo passwd chinna
+/* When user is created, user home directory is created : /home/username  */
+
+* To check list of users
+                cmd: sudo cat /etc/passwd
+
+* To lock the user
+        cmd:  sudo usermod -L chinna   or  sudo usermod --lock chinna
+* To unlock the user
+        cmd:  sudo usermod -U chinna   or  sudo usermod --unlock chinna
+
+* To change user name
+                  cmd: sudo usermod -l <newname>  <oldname>
+
+* To delete user
+                cmd: sudo userdel chinna
+
+
+GROUP MANAGEMENT :
+
+* To create a Group
+                cmd:  sudo groupadd tecsolutionz
+
+* To change Group Name
+                cmd: sudo groupmod -n <newname> <old name>
+
+* To add one user to Group
+                cmd: sudo usermod -G <groupname> <username>
+
+* To add multiple users to Group
+                cmd: sudo gpasswd -M <user1>,<user2>,<user3>   <group>
+
+* To remove user from Group
+                cmd: sudo gpasswd -d <username> <groupname>
+
+* To check list of groups
+                cmd: sudo cat /etc/group
