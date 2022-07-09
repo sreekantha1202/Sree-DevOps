@@ -12,7 +12,7 @@ Write    = 2
 excute    = 1
 
 -         rw-              r--                r--  
-file   owner  owner group    others
+file     owner         owner group          others
 
 chmod    to change the permissions of the file
 chown   to change the ownership of the file
