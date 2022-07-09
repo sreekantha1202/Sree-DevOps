@@ -1,0 +1,31 @@
+File Permissions on linux
+ File Permissions
+
+-rw-r--r-- 1 root      root         0 Dec  7 19:10 file1
+drwxr-xr-x 2 root      root      4096 Dec  7 19:10 test/
+
+-   indicates file
+d   indicates folder/directory
+
+Read    = 4
+Write    = 2
+excute    = 1
+
+-         rw-              r--                r--  
+file   owner  owner group    others
+
+chmod    to change the permissions of the file
+chown   to change the ownership of the file
+
+sudo chmod 600 test/  only owner has read, write permissions,
+            not for owners group or others
+sudo chmod 777 test/   full permissions is provided to all
+
+
+u    user/owner
+g    group
+o    other
+a     all
+sudo chmod a-rwx test/    removes all permissions for file
+sudo chmod a+rwx test/ provides full permissions to all
+sudo chmod a+r  test/     provides full permissions to all
