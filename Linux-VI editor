@@ -1,0 +1,20 @@
+VI editor
+ vi filename
+vim filename
+
+i       - to insert into file
+:wq     - to save file and quit
+:q!       - to quit the file
+dd    - to delete the line
+shift + a  -- move cursor to end of the line
+yy      - copies the current line
+yw     - copies the current word
+p    - to paste
+u     - undo previously executed command
+
+:1     - moves cursor to the start of the page
+:$    - moves cursor to the end of the page
+
+/keyword    to search for the particular keyword
+
+:f filename    to rename a file will create as new file
