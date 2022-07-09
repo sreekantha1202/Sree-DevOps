@@ -1,0 +1,19 @@
+[root@linuxpractice ~]# grep root /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+operator:x:11:0:operator:/root:/sbin/nologin
+[root@linuxpractice ~]#
+
+CASE SENSITIVE
+[root@linuxpractice ~]# cat file | grep -i root
+root
+ROOT
+[root@linuxpractice ~]#
+
+TO DISPLAY ALL EXCEPT THE GIVEN WORD
+[root@linuxpractice ~]# cat file | grep -i -v root
+Linux
+Word
+Windows
+[root@linuxpractice ~]#
+
+
