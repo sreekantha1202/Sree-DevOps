@@ -1,0 +1,70 @@
+less more head tail sort cut sed
+
+TAIL - Displays Last 10 lines
+eg:  tail /etc/passwd
+
+Head - Displays first 10 lines
+eg:  tail /etc/passwd
+
+LESS - is used to see the output line wise or page wise.
+eg: less /etc/passwd
+-press Enter key to scroll down line by line (or)
+Use d to go to next page
+Use b to go to previous page
+Use / to search for a word in the file
+Use v to go vi mode where you can edit the file and once you save it you will back to less command
+
+
+More is simillar to less 
+eg: more /etc/passwd
+-press Enter key to scroll down line by line (or)
+Use d to go to next page
+Use / to search for a word in the file
+Use v to go vi mode where you can edit the file and once you save it you will back to 
+more command
+
+SORT - to display in Alphabetic or Numeric order
+eg
+[root@linuxpractice ~]# sort -h testfile
+1. A
+2. B
+3. C
+4. P
+5. V
+6. O
+10. S
+15. m
+20. r
+[root@linuxpractice ~]#
+eg: To remove duplicates
+[root@linuxpractice ~]# sort -u testfile
+10. S
+15. m
+1. A
+20. r
+2. B
+3. C
+4. P
+5. V
+6. o
+
+
+CUT: cut the sections of a file and display output
+eg:
+[root@linuxpractice ~]# cut -d: -f1 /etc/passwd
+root
+bin
+daemon
+adm
+lp
+sync
+eg: cut –d “ “ –f1 filename
+    cut –d, -f1 filename
+    
+SED: is used to search a word in the file and replace it with the 
+word required to be in the output
+
+
+
+
+
