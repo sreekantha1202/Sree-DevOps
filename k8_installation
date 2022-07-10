@@ -59,6 +59,12 @@ Alternatively, if you are the root user, you can run:
 
   export KUBECONFIG=/etc/kubernetes/admin.conf
 
+ls -al
+vi .bash_profile
+and add below at the end of the file
+export KUBECONFIG=/etc/kubernetes/admin.conf
+
+
 You should now deploy a pod network to the cluster.
 Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
   https://kubernetes.io/docs/concepts/cluster-administration/addons/
