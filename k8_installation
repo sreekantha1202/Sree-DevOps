@@ -68,8 +68,10 @@ export KUBECONFIG=/etc/kubernetes/admin.conf
 You should now deploy a pod network to the cluster.
 Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
   https://kubernetes.io/docs/concepts/cluster-administration/addons/
-
+------------------------------------------------------------------------------------
 Then you can join any number of worker nodes by running the following on each as root:
+
+In workernode
 
 kubeadm join 172.16.16.54:6443 --token co6voj.k4i83iyg11uukjcv \
         --discovery-token-ca-cert-hash sha256:ba406d917e23332d8ee549a49850456cfb09a6e34e144d7fce05cc4ebefaf4a2
