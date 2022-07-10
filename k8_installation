@@ -2,16 +2,23 @@
 2. swith to root sudo su
 3. swapoff -a   to remove swap memory
 4. IP tables routing  copy paste below commands
+5. Install Docker and  start service
+
+yum install docker 
+systemctl enable docker && systemctl start docker
+
+Docker will communicate with k8s
+cat > /etc/docker/daemon.json
+
+{
+   "exec-opts": ["native.cgroupdriver=systemd"]
+}
+
 
 cat <<EOF > /etc/sysctl.d/k8s.conf
 net.bridge.bridge-nf-call-ip6tables = 1
 net.bridge.bridge-nf-call-iptables = 1
 EOF
-
-5. Install Docker and  start service
-
-yum install docker 
-systemctl enable docker && systemctl start docker 
 
 6. To configure the Kubernetes package in the System we will use this command.
 
